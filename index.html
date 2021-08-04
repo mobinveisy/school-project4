@@ -31,10 +31,19 @@
 
     <!-- bootstrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 
 <body>
+                  <!-- loader  -->
+    <div class="preloader">
+        <div id="loader"></div>
+        <div class="preloader_inner">1%</div>
+        <img class="preloader-h1-sajjeo" src="images/img/preloader-image-removebg-preview.png">
+        <p class="preloader-h2-sajjeo"> www.noavaran.ir </p>
+    </div>
+
 
     <!--====== HEADER PART START ======-->
 
@@ -85,19 +94,6 @@
                                 </ul>
                             </div>
 
-                            <div class="navbar-social d-none d-sm-flex align-items-center">
-                                <span>ما را دنبال کنید </span>
-                                <div class="social-btns">
-                                        
-                                        <a class="btn whatsapp" href="#">
-                                        <i style="color: #4dc247;" class="bi bi-whatsapp"></i></a>
-
-                                        <a class="btn instagram" href="#">
-                                        <i class="bi bi-instagram"></i></a>
-
-                                        <a class="btn telegram" href="#">
-                                        <i style="color: #0088cc ;" class="bi bi-telegram"></i></a>
-                                </div>
                             </div>
                         </nav> <!-- navbar -->
                     </div>
@@ -138,13 +134,21 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <div class="section-title pb-10">
-                        <h4 class="title">Crafted For</h4>
-                        <p class="text">Stop wasting time and money designing and managing a website that doesn’t get
-                            results. Happiness guaranteed!</p>
-                    </div> <!-- section title -->
+                    <!-- Swiper -->
+    <div class="swiper-container mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="images/img/eftekharat.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/img/eftekharat2.jpg" />
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
                 </div>
             </div> <!-- row -->
+            
             <div class="row">
                 <div class="col-lg-8">
                     <div class="row">
@@ -198,7 +202,7 @@
         </div> <!-- conteiner -->
         <div class="services-image d-lg-flex align-items-center">
             <div class="image">
-                <img src="assets/images/services.png" alt="Services">
+                <img src="#" alt="Services">
             </div>
         </div> <!-- services image -->
     </section>
@@ -289,7 +293,7 @@
                 <div class="col-lg-4 col-md-7 col-sm-9">
                     <div class="single-pricing pro mt-40">
                         <div class="pricing-baloon">
-                            <img src="assets/images/baloon.svg" alt="baloon">
+                            <img src="#" alt="baloon">
                         </div>
                         <div class="pricing-header">
                             <h5 class="sub-title">Pro</h5>
@@ -359,7 +363,7 @@
                 <div class="col-lg-4 col-md-7 col-sm-9">
                     <div class="single-pricing enterprise mt-40">
                         <div class="pricing-flower">
-                            <img src="assets/images/flower.svg" alt="flower">
+                            <img src="#" alt="flower">
                         </div>
                         <div class="pricing-header text-right">
                             <h5 class="sub-title">Enterprise</h5>
@@ -435,7 +439,7 @@
 
     <section id="call-to-action" class="call-to-action">
         <div class="call-action-image">
-            <img src="assets/images/call-to-action.png" alt="call-to-action">
+            <img src="#" alt="call-to-action">
         </div>
 
         <div class="container-fluid">
@@ -536,7 +540,7 @@
                     <div class="col-lg-12">
                         <div class="footer-logo-support d-md-flex align-items-end justify-content-between">
                             <div class="footer-logo d-flex align-items-end">
-                                <a class="mt-30" href="index.html"><img src="assets/images/logo.svg" alt="Logo"></a>
+                                <a class="mt-30" href="index.html"><img src="#" alt="Logo"></a>
 
                                 <ul class="social mt-30">
                                     <li><a href="#"><i class="lni-facebook-filled"></i></a></li>
@@ -581,6 +585,20 @@
                             </ul>
                         </div> <!-- footer link -->
                     </div>
+                    
+                    <div class="navbar-social align-items-center">
+                        <span>ما را دنبال کنید </span>
+                        <div class="social-btns">
+
+                            <a class="btn whatsapp" href="#">
+                                <i style="color: #4dc247;" class="bi bi-whatsapp"></i></a>
+
+                            <a class="btn instagram" href="#">
+                                <i class="bi bi-instagram"></i></a>
+
+                            <a class="btn telegram" href="#">
+                                <i style="color: #0088cc ;" class="bi bi-telegram"></i></a>
+                        </div>
                     <div class="col-lg-4 col-md-6 col-sm-7">
                         <div class="footer-newsletter">
                             <h6 class="footer-title">Subscribe Newsletter</h6>
@@ -620,12 +638,56 @@
     <!--====== BACK TO TOP PART ENDS ======-->
 
 
+<script>
+    loader();
+function loader(success) {
+    var obj = document.querySelector('.preloader'),
+        inner = document.querySelector('.preloader_inner'),
+        page = document.querySelector('body');
+    obj.classList.add('show');
+    page.classList.remove('show');
+    var w = 0,
+        t = setInterval(function () {
+            w = w + 1;
+            inner.textContent = w + '%';
+            if (w === 100) {
+                obj.classList.remove('show');
+                obj.classList.add('opacity-sajjeo');
+                page.classList.add('show');
+                clearInterval(t);
+                w = 0;
+                if (success) {
+                    return success();
+                }
+            }
+        }, 10);
+}
 
 
 
+        // ---  Swiper JS ---- //
+        var swiper = new Swiper(".mySwiper", {
+            effect: "cube",
+            grabCursor: true,
+            cubeEffect: {
+                shadow: true,
+                slideShadows: true,
+                shadowOffset: 20,
+                shadowScale: 0.94,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+   
+
+</script>
 
 
 
+  
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <!--====== jquery js ======-->
     <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
