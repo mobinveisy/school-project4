@@ -1,24 +1,3 @@
-/*-----------------------------------------------------------------------------------
-
-    Template Name: Start
-    Template URI: UIdeck.com
-    Description: Start | Landing Page for Startup and SaaS Business
-    Author: Uideck
-    Author URI: https://uideck.com/
-    Support: https://uideck.com/support/
-    Version: 1.0
-
------------------------------------------------------------------------------------
-
-    CSS INDEX
-    ===================
-
-    01. Theme default CSS
-	02. Header
-    03. Hero
-	04. Footer
-
------------------------------------------------------------------------------------*/
 /*===========================
     1. COMMON css 
 ==========================*/
@@ -1478,6 +1457,7 @@ p.form-message.error {
         color: #fff;
         text-shadow: none;
         z-index: 9999;
+       
     }
     
     .preloader-h2-sajjeo {
@@ -1537,6 +1517,7 @@ p.form-message.error {
         -webkit-animation: spin 2s linear infinite;
         animation: spin 1s linear infinite;
         z-index: 9999999;
+
     }
     
     #loader:before {
@@ -1547,7 +1528,7 @@ p.form-message.error {
         right: 5px;
         bottom: 5px;
         border: 5px solid transparent;
-        border-top-color: #2a2a86;
+        border-top-color: #F79722;
         border-radius: 100%;
         -webkit-animation: spin 3s linear infinite;
         animation: spin 3s linear infinite;
@@ -1561,7 +1542,7 @@ p.form-message.error {
         right: 12px;
         bottom: 12px;
         border: 4px solid transparent;
-        border-top-color: #cd1e25;
+        border-top-color: #939598;
         border-radius: 100%;
         -webkit-animation: spin 1s linear infinite;
         animation: spin 1s linear infinite;
@@ -1595,14 +1576,16 @@ p.form-message.error {
         }
     }
     
-    .preloader-h1-sajjeo img {
-        width: 30% !important;
+    .preloader-h1-sajjeo {
+        width: 20% !important;
+        
     }
     
     .preloader-h2-sajjeo {
-        opacity: 0.4;
+        opacity: 0.3;
         font-size: 60px;
-        top: 5px;
+        top: 400px;
+      
     }
     
     .preloader {
@@ -1614,11 +1597,13 @@ p.form-message.error {
         margin: auto;
         width: 100vw;
         height: 100vh;
-        background: #f2fdfa;
+        background: #e0e0e0;
         visibility: visible;
         opacity: 1;
         transition: all 0.1s ease;
         z-index: 99999999999999;
+        transition:all 0.9s ease;
+
     }
     
     .preloader_inner {
@@ -1635,7 +1620,7 @@ p.form-message.error {
         font-size: 3em;
         font-family: monospace;
         font-weight: 300;
-        color: #333;
+        color: #fa8b03;
     }
     
     .show {
@@ -1649,3 +1634,5 @@ p.form-message.error {
         opacity: 0 !important;
         z-index: 0 !important;
     }
+
+   
