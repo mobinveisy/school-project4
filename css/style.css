@@ -762,9 +762,14 @@ nav {
       4.PRICING css 
 ===========================*/
 .pricing-area {
+
   padding-top: 120px;
-  padding-bottom: 120px;
-  background-color: #f4f6f7;
+  padding-bottom: 200px;
+  border-radius: 40px;
+background: linear-gradient(145deg, #dcddde, #ffffff);
+box-shadow:  19px 19px 38px #929494,
+             -19px -19px 38px #ffffff;
+  
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -782,23 +787,29 @@ nav {
 }
 
 .single-pricing {
-  -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  /* -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
   -moz-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16); */
   padding: 24px 20px 50px;
   border-radius: 8px;
   position: relative;
   overflow: hidden;
-  background-color: #fff;
+  border-radius: 50px;
+background: #e0e0e0;
+box-shadow:  29px 29px 58px #bebebe,
+             -29px -29px 58px #ffffff;
+             text-align: center;
+             align-items: center !important;
 }
 
 .single-pricing .pricing-header .sub-title {
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 25px;
+  font-size: 30px;
+  font-weight: 700;
   color: #121212;
   position: relative;
-  padding-bottom: 8px;
+  padding-bottom: 12px;
+  font-family: "IRANSansWeb";
+  
 }
 
 .single-pricing .pricing-header .sub-title::before {
@@ -811,15 +822,16 @@ nav {
   right: 0;
   background-color: #2bdbdc;
   margin: 0 auto;
+ 
 }
 
 .single-pricing .pricing-header .price {
   display: block;
-  font-size: 64px;
+  font-size: 24px;
   font-weight: 600;
-  line-height: 80px;
-  margin-top: 32px;
+  margin-bottom: 20px;
   color: #121212;
+  margin-top: 12px;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
@@ -844,10 +856,7 @@ nav {
 }
 
 .single-pricing .pricing-header .year {
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 25px;
-  color: #6c6c6c;
+  
   margin-top: 3px;
 }
 
@@ -912,7 +921,7 @@ nav {
 }
 
 .single-pricing.pro .pricing-header .sub-title::before {
-  right: auto;
+  right: 0;
   left: 0;
   background-color: #0067f4;
 }
@@ -926,8 +935,9 @@ nav {
 
 .single-pricing.enterprise .pricing-header .sub-title::before {
   right: 0;
-  left: auto;
-  background-color: #0067f4;
+  left: 0;
+  background-color: #4da422;
+
 }
 
 .single-pricing.enterprise .pricing-flower {
@@ -963,17 +973,14 @@ nav {
     5.CALL TO ACTION css 
 ===========================*/
 .call-to-action {
-  background-color: #0067f4;
+  margin-top: 50px;
+  border-radius: 49px;
+background: #0067f4;
+box-shadow: inset 31px 31px 62px #002a64,
+            inset -31px -31px 62px #00a4ff;
   position: relative;
 }
 
-.call-action-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 50%;
-  height: 100%;
-}
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .call-action-image {
@@ -998,9 +1005,10 @@ nav {
 
 .call-action-content {
   max-width: 560px;
-  margin: 0 auto;
-  padding-top: 230px;
+
+  padding-top: 40px;
   padding-bottom: 236px;
+  text-align: center !important;
 }
 
 @media (max-width: 767px) {
@@ -1015,6 +1023,7 @@ nav {
   font-weight: 600;
   color: #fff;
   line-height: 55px;
+  font-family: "IRANSansWeb";
 }
 
 @media (max-width: 767px) {
@@ -1026,9 +1035,14 @@ nav {
 
 .call-action-content .text {
   font-size: 16px;
+  padding: 30px;
   color: #fff;
   line-height: 24px;
   margin-top: 16px;
+  border-radius: 49px;
+background: linear-gradient(145deg, #006eff, #005ddc);
+box-shadow:  20px 20px 40px #002a64,
+             -20px -20px 40px #00a4ff;
 }
 
 @media (max-width: 767px) {
@@ -1729,8 +1743,10 @@ mark {
 }
 
 .title {
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: "IRANSansWeb";
+
 }
 
 #typing {
