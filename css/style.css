@@ -9,6 +9,7 @@ body {
   font-style: normal;
   color: #121212;
   direction: rtl;
+  user-select: none;
 }
 
 * {
@@ -21,7 +22,6 @@ body {
 
 img {
   max-width: 100%;
-  user-select: none;
 }
 
 a:focus,
@@ -638,11 +638,11 @@ nav {
 /*===========================
       3.SERVICES css 
 ===========================*/
-/* .services-area {
+.services-area {
   padding-top: 120px;
   padding-bottom: 120px;
   position: relative;
-} */
+}
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .services-area {
@@ -1629,9 +1629,8 @@ p.form-message.error {
 
 
 .main-img {
-
   display: inline;
-  margin-right: 420px;
+  margin-right: 450px;
   margin-top: -450px;
   animation: Bounce_1 3s ease infinite;
 }
@@ -1710,10 +1709,12 @@ mark {
 .school-poeple {
   font-family: "IRANSansWeb";
 }
-/* .school-poeple{
-  margin-right: 800px;
-  margin-top: -400px;
-} */
+
+.school-poeple{
+  /* margin-right: 800px;
+  margin-top: -400px; */
+  margin: auto;
+}
 .icon-style {
   color: #F7941D;
   border-radius: 46px;
