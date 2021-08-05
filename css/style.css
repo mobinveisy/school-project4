@@ -28,14 +28,17 @@ background: linear-gradient(145deg, #4190ff, #377ad8);
 box-shadow:  20px 20px 40px #193762,
              -20px -20px 40px #61d7ff;
 }
-
+::selection{
+  background-color:#F79722 ;
+  color: #fff;
+}
 body {
   font-family: "IRANSansWeb", sans-serif;
   font-weight: normal;
   font-style: normal;
   color: #121212;
   direction: rtl;
-  user-select: none;
+ 
 }
 
 * {
@@ -614,8 +617,16 @@ nav {
 
 .header-hero .header-content .header-btn li a.main-btn.btn-one {
   color: #fff;
+  animation: pulse_01 2s ease infinite;
 }
-
+.header-hero .header-content .header-btn li a.main-btn.btn-one:hover{
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  animation: none;
+}
 .header-hero .header-content .header-btn li a.main-btn.btn-one::before {
   position: absolute;
   content: '';
@@ -628,23 +639,44 @@ nav {
   background-image: linear-gradient(to right, #0067f4, #2bdbdc);
   background-position: right center;
   z-index: -1;
-  -webkit-transition: all 0.3s ease-out 0s;
-  -moz-transition: all 0.3s ease-out 0s;
-  -ms-transition: all 0.3s ease-out 0s;
-  -o-transition: all 0.3s ease-out 0s;
-  transition: all 0.5s ease-out 0s;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+
 }
+@keyframes pulse_01 {
+  0% {
+      transform: scale(0.94);
+      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+  }
+
+  70% {
+      transform: scale(1);
+      box-shadow: 0 0 0 12px rgba(255, 255, 255, 0);
+  }
+
+  100% {
+      transform: scale(0.94);
+      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+
+  }
+}
+
 
 .header-hero .header-content .header-btn li a.main-btn.btn-one:hover::before {
   background-image: -webkit-linear-gradient(right, #0067f4, #2bdbdc);
   background-image: -o-linear-gradient(right, #0067f4, #2bdbdc);
   background-image: linear-gradient(to left, #0067f4, #2bdbdc);
   background-position: left center;
-  -webkit-transition: all none ease-out 0s;
-  -moz-transition: all none ease-out 0s;
-  -ms-transition: all none ease-out 0s;
-  -o-transition: all none ease-out 0s;
-  transition: all none ease-out 0s;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+
+
 }
 
 .header-hero .header-content .header-btn li a.main-btn.btn-two:hover {
