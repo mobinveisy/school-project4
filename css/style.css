@@ -21,6 +21,7 @@ body {
 
 img {
   max-width: 100%;
+  user-select: none;
 }
 
 a:focus,
@@ -513,6 +514,7 @@ nav {
 
 .header-hero .header-content {
   padding-top: 195px;
+
   position: relative;
   z-index: 9;
 }
@@ -1706,10 +1708,35 @@ p.form-message.error {
   }
   
   .main-img{
+    
     display: inline;
- margin-right: 500px;
+ margin-right: 420px;
  margin-top: -450px;
  animation: Bounce_1 3s ease infinite ;
+  }
+  .main-img1{
+  
+    display: inline;
+    opacity: 0.9;
+margin-right: 1000px;
+ margin-top: -900px;
+ animation: Bounce_2 6s ease infinite ;
+  }
+
+  .main-img2{
+    display: inline;
+    width: 300px;
+    height: 300px;
+ margin-right: 890px;
+ margin-top: -450px;
+ animation: Bounce_1 8s ease infinite ;
+  }
+  .main-img3{
+    
+    display: inline;
+ margin-right: 850px;
+ margin-top: -160px;
+ animation: shine_1 3s ease infinite ;
   }
 
   @keyframes Bounce_1 {
@@ -1722,4 +1749,29 @@ p.form-message.error {
     50% {
         transform: translateY(0px);
     }
+  }
+  
+  @keyframes Bounce_2 {
+
+    0%,
+    100% {
+        transform: rotate(-20deg);
+    }
+
+    50% {
+        transform: rotate(50deg);
+    }
+  }
+
+
+  @keyframes shine_1 {
+    0%{
+    filter: sepia(100%);
+    }
+    50%{
+      filter: sepia(20%);
+      }
+      100%{
+        filter: sepia(100%);
+        }
   }
