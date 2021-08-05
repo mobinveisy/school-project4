@@ -54,13 +54,6 @@ $(function () {
     });
 
 
-    //====== Magnific Popup
-
-    $('.video-popup').magnificPopup({
-        type: 'iframe'
-        // other options
-    });
-
 
     //===== Back to top
 
@@ -82,9 +75,6 @@ $(function () {
             scrollTop: 0,
         }, 1500);
     });
-
-
-
 
 
 });
