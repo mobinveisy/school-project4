@@ -78,5 +78,33 @@ $(function () {
 
 
 });
+$('.carousel').carousel({
+    interval: 2000
+  })
+  
+  var i = 0;
+  var txt = 'وب سایت مدرسه نوآوران';
+  var speed = 250;
+  
+  function typeWriter() {
+    if (i < txt.length) {
+      document.getElementById("typing").innerHTML += txt.charAt(i);
+      i++;
+      setTimeout(typeWriter, speed);
+    }
+  }
+  typeWriter();
 
-// loader
+ 
+
+// typing effect 
+  
+  $(window).on('scroll', function (event) {
+    var scroll = $(window).scrollTop();
+    var text1 = "<p>وب سایت مدرسه نوآوران</p>"
+    if (scroll < 10) {
+        $("#typing").remove("p");
+    } else {
+        $("#typing").add(text1);
+    }
+});
