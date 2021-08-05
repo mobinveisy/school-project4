@@ -93,13 +93,6 @@ p {
   margin: 0px;
 }
 
-.bg_cover {
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-}
 
 /*===== All Button Style =====*/
 .main-btn {
@@ -123,9 +116,8 @@ p {
   -moz-transition: all 0.4s ease-out 0s;
   -ms-transition: all 0.4s ease-out 0s;
   -o-transition: all 0.4s ease-out 0s;
-  transition: all 0.4s ease-out 0s;
+  transition: all 0.8s ease-out 0s;
   position: relative;
-  text-transform: uppercase;
 }
 
 @media (max-width: 767px) {
@@ -538,9 +530,9 @@ nav {
 }
 
 .header-hero .header-content .header-title {
-  font-size: 44px;
-  line-height: 55px;
-  color: #121212;
+  font-size: 40px;
+  line-height: 60px;
+  color: #0e0d0d;
   font-weight: 600;
 }
 
@@ -1635,4 +1627,85 @@ p.form-message.error {
         z-index: 0 !important;
     }
 
-   
+    #home-carousel {
+      z-index: 3;
+      height: 100%;
+      top: auto;
+      bottom: -50px;
+  }
+  
+  #home-carousel .text {
+      left: 90%;
+      width: 100%;
+  }
+  
+  #home-carousel .people {
+      background-repeat: no-repeat;
+      background-size: contain;
+      height: 90%;
+      background-position: left bottom;
+      margin-left: 30px;
+      bottom: 0;
+  }
+  
+  #home-carousel .slick-list,
+  #home-carousel .slick-track {
+      height: 100% !important;
+  }
+  
+  #home-carousel .slick-arrow {
+      display: none !important;
+  }
+  
+  #home-carousel .item {
+      width: 70%;
+      left: 0 !important;
+      position: absolute !important;
+      height: 100%;
+  }
+  
+  #home-carousel .slick-track {
+      width: 100% !important;
+  }
+  
+  #home-carousel .item {
+      height: 100% !important;
+      position: relative;
+      z-index: 1;
+  }
+  
+  #home-carousel .item .people {
+      width: 100%;
+      left: -100px;
+      transition: left 1s ease;
+      animation-delay: .5s;
+      position: absolute;
+  }
+  
+  #home-carousel .item.slick-active .people {
+      left: 0;
+      animation-delay: .5s;
+  }
+  
+  
+  
+  #home-carousel .item .icona-nesea {
+  
+      font-size: 40px;
+      position: absolute;
+      left: 36%;
+      top: 7%;
+      transition: left 1s ease;
+  
+  }
+  
+  #home-carousel .item.slick-active .icona-nesea {
+      left: 75%;
+      transition: left 1s ease;
+  }
+  
+  .main-img{
+    display: inline;
+ margin-right: 500px;
+ margin-top: -450px;
+  }

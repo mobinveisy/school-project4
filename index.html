@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html>
 
 <head>
 
@@ -31,15 +31,20 @@
 
     <!-- bootstrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.green.min.css">
+    <!-- animate css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
-                  <!-- loader  -->
+    <!-- loader  -->
     <div class="preloader">
         <div id="loader"></div>
-        
         <div class="preloader_inner">1%</div>
         <img class="preloader-h1-sajjeo" src="images/img/preloader-image-removebg-preview.png">
         <p class="preloader-h2-sajjeo"> www.noavaran.ir </p>
@@ -47,7 +52,6 @@
 
 
     <!--====== HEADER PART START ======-->
-
     <header class="header-area">
         <div class="navgition navgition-transparent">
             <div class="container">
@@ -92,20 +96,21 @@
                                     <li class="nav-item">
                                         <a class="page-scroll" href="#news">اخبار </a>
                                     </li>
+
                                 </ul>
                             </div>
 
-                            </div>
-                        </nav> <!-- navbar -->
                     </div>
-                </div> <!-- row -->
-            </div> <!-- container -->
+                    </nav> <!-- navbar -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
         </div> <!-- navgition -->
 
-        <div id="home" class="header-hero bg_cover" style="background-image: url(assets/images/header-bg.jpg)">
+        <div id="home" class="header-hero bg_cover">
             <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-xl-8 col-lg-10">
+                <div class="row">
+                    <div class="col-md-6">
                         <div class="header-content text-center">
                             <h3 class="header-title">چگونه می توان نوجوانانی موفق در طول سال تحصیلی داشته باشیم؟ با
                                 نوآوران همراه باشید! </h3>
@@ -113,10 +118,40 @@
                                 یک سفر است که در تمامی ابعاد و جنبه های زندگی جریان دارد.</p>
                             <ul class="header-btn">
                                 <li><a class="main-btn btn-one" href="#">ثبت نام </a></li>
-                                <li><a class="main-btn btn-two video-popup"
-                                        href="https://www.youtube.com/watch?v=r44RKWyfcFw">درباره مدرسه <i
-                                            class="lni-play"></i></a></li>
+                                <li><a class="main-btn btn-two video-popup">درباره مدرسه <i class="lni-play"></i></a>
+                                </li>
                             </ul>
+                            <img src="images/img/2-min-removebg-preview.png" alt="main" class="main-img">
+
+                            <div class="col-md-6">
+                                <div id="home-carousel" dir="ltr">
+                                    <div class="slide-home item swiper-slide">
+                                        <span class="icona-nesea icon-Nesea_Logo_RGB_n"></span>
+                                        <div class="people" style="background-image:url('img/school.png')">
+                                        </div>
+                                        <div class="text">
+                                            <!--<i class="bi bi-chevron-left"></i>--><br>
+                                        </div>
+                                    </div>
+
+                                    <div class="slide-home item">
+                                        <span class="icona-nesea icon-Nesea_Logo_RGB_n"></span>
+                                        <div class="people" style="background-image:url('img/girl2.png')">
+                                        </div>
+                                        <div class="text">
+                                            <!-- <i class="bi bi-chevron-left"></i> --><br></div>
+                                    </div>
+
+                                    <div class="slide-home item">
+                                        <span class="icona-nesea icon-Nesea_Logo_RGB_n"></span>
+                                        <div class="people" style="background-image:url('img/girl3.png')">
+                                        </div>
+                                        <div class="text">
+                                            <!--<i class="bi bi-chevron-left"></i>--><br></div>
+                                    </div>
+
+                                </div>
+                            </div>
                         </div> <!-- header content -->
                     </div>
                 </div> <!-- row -->
@@ -136,20 +171,20 @@
             <div class="row">
                 <div class="col-lg-6">
                     <!-- Swiper -->
-    <div class="swiper-container mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="images/img/eftekharat.jpg" />
-          </div>
-          <div class="swiper-slide">
-            <img src="images/img/eftekharat2.jpg" />
-          </div>
-        </div>
-        <div class="swiper-pagination"></div>
-      </div>
+                    <div class="swiper-container mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="#" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="#" />
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
                 </div>
             </div> <!-- row -->
-            
+
             <div class="row">
                 <div class="col-lg-8">
                     <div class="row">
@@ -586,7 +621,7 @@
                             </ul>
                         </div> <!-- footer link -->
                     </div>
-                    
+
                     <div class="navbar-social align-items-center">
                         <span>ما را دنبال کنید </span>
                         <div class="social-btns">
@@ -600,34 +635,35 @@
                             <a class="btn telegram" href="#">
                                 <i style="color: #0088cc ;" class="bi bi-telegram"></i></a>
                         </div>
-                    <div class="col-lg-4 col-md-6 col-sm-7">
-                        <div class="footer-newsletter">
-                            <h6 class="footer-title">Subscribe Newsletter</h6>
-                            <div class="newsletter">
-                                <form action="#">
-                                    <input type="text" placeholder="Your Email">
-                                    <button type="submit"><i class="lni-angle-double-right"></i></button>
-                                </form>
-                            </div>
-                            <p class="text">Subscribe weekly newsletter to stay upto date. We don’t send spam.</p>
-                        </div> <!-- footer newsletter -->
-                    </div>
-                </div> <!-- row -->
-            </div> <!-- container -->
-        </div> <!-- footer widget -->
-
-        <div class="footer-copyright">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="copyright text-center">
-                            <p class="text">Template Crafted by <a rel="nofollow" href="https://uideck.com">UIdeck</a> -
-                                UI Powered by <a el="nofollow" href="https://rebrand.ly/ayroui">AyroUI</a></p>
+                        <div class="col-lg-4 col-md-6 col-sm-7">
+                            <div class="footer-newsletter">
+                                <h6 class="footer-title">Subscribe Newsletter</h6>
+                                <div class="newsletter">
+                                    <form action="#">
+                                        <input type="text" placeholder="Your Email">
+                                        <button type="submit"><i class="lni-angle-double-right"></i></button>
+                                    </form>
+                                </div>
+                                <p class="text">Subscribe weekly newsletter to stay upto date. We don’t send spam.</p>
+                            </div> <!-- footer newsletter -->
                         </div>
-                    </div>
-                </div> <!-- row -->
-            </div> <!-- container -->
-        </div> <!-- footer copyright -->
+                    </div> <!-- row -->
+                </div> <!-- container -->
+            </div> <!-- footer widget -->
+
+            <div class="footer-copyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="copyright text-center">
+                                <p class="text">Template Crafted by <a rel="nofollow"
+                                        href="https://uideck.com">UIdeck</a> -
+                                    UI Powered by <a el="nofollow" href="https://rebrand.ly/ayroui">AyroUI</a></p>
+                            </div>
+                        </div>
+                    </div> <!-- row -->
+                </div> <!-- container -->
+            </div> <!-- footer copyright -->
     </footer>
 
     <!--====== FOOTER PART ENDS ======-->
@@ -639,30 +675,31 @@
     <!--====== BACK TO TOP PART ENDS ======-->
 
 
-<script>
-    loader();
-function loader(success) {
-    var obj = document.querySelector('.preloader'),
-        inner = document.querySelector('.preloader_inner'),
-        page = document.querySelector('body');
-    obj.classList.add('show');
-    page.classList.remove('show');
-    var w = 0,
-        t = setInterval(function () {
-            w = w + 1;
-            inner.textContent = w + '%';
-            if (w === 100) {
-                obj.classList.remove('show');
-                obj.classList.add('opacity-sajjeo');
-                page.classList.add('show');
-                clearInterval(t);
-                w = 0;
-                if (success) {
-                    return success();
-                }
-            }
-        }, 10);
-}
+    <script>
+        loader();
+
+        function loader(success) {
+            var obj = document.querySelector('.preloader'),
+                inner = document.querySelector('.preloader_inner'),
+                page = document.querySelector('body');
+            obj.classList.add('show');
+            page.classList.remove('show');
+            var w = 0,
+                t = setInterval(function () {
+                    w = w + 1;
+                    inner.textContent = w + '%';
+                    if (w === 100) {
+                        obj.classList.remove('show');
+                        obj.classList.add('opacity-sajjeo');
+                        page.classList.add('show');
+                        clearInterval(t);
+                        w = 0;
+                        if (success) {
+                            return success();
+                        }
+                    }
+                }, 10);
+        }
 
 
 
@@ -680,13 +717,53 @@ function loader(success) {
                 el: ".swiper-pagination",
             },
         });
-   
-
-</script>
 
 
 
-  
+
+        $(document).ready(function () {
+            $("#home-carousel .item").shuffle();
+
+            $("#home-carousel").slick({
+                nextArrow: '<span class="arrow-right icon-chevron-right"></i>',
+                prevArrow: '<span class="arrow-left icon-chevron-left"></i>',
+                dots: false,
+                autoplay: true,
+                infinite: true,
+                centerMode: false,
+                variableWidth: true,
+                adaptiveHeight: true,
+                fade: true,
+                arrow: false,
+                speed: 1000,
+                draggable: false,
+                focusOnSelect: true,
+                pauseOnHover: false
+            });
+        });
+        new MCSlider("mcslider");
+
+
+        // $('body').waitForImages(function () {
+
+        // //$("#body").css("overflow","visible");
+
+
+        // $("#body").removeClass("loading");
+        // $("#preloader").remove();
+
+        // $("#body,html").css("overflow", "visible");
+        // $("#body,html").css("width", "100%");
+        // $("#body,html").css("height", "100%");
+        // });
+
+        // });
+    </script>
+
+
+    <!-- owl carousel -->
+    <script src="js/owl.carousel.min.js"></script>
+
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
