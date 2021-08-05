@@ -530,10 +530,11 @@ nav {
 }
 
 .header-hero .header-content .header-title {
-  font-size: 40px;
+  font-size: 34px;
   line-height: 60px;
   color: #0e0d0d;
   font-weight: 600;
+  font-family: "IRANSansWeb";
 }
 
 @media (max-width: 767px) {
@@ -1708,4 +1709,17 @@ p.form-message.error {
     display: inline;
  margin-right: 500px;
  margin-top: -450px;
+ animation: Bounce_1 3s ease infinite ;
+  }
+
+  @keyframes Bounce_1 {
+
+    0%,
+    100% {
+        transform: translateY(-30px);
+    }
+
+    50% {
+        transform: translateY(0px);
+    }
   }
