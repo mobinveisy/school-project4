@@ -1,7 +1,8 @@
 
 
 $(function () {
-
+             
+    // new WOW().init();
 
     "use strict";
 
@@ -78,6 +79,7 @@ $(function () {
 
 
 });
+
 $('.carousel').carousel({
     interval: 2000
   })
@@ -108,3 +110,6 @@ $('.carousel').carousel({
         $("#typing").add(text1);
     }
 });
+
+
+ 
