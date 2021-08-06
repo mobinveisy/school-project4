@@ -40,6 +40,7 @@ body {
   font-style: normal;
   color: #121212;
   direction: rtl;
+  overflow-x: hidden !important;
 
 }
 
