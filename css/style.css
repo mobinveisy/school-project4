@@ -112,7 +112,7 @@ ul,
 ol {
   margin: 0px;
   padding: 0px;
-  list-style-type: none;
+ list-style-type: none;
 }
 
 p {
@@ -2022,4 +2022,9 @@ margin-bottom: 100px;
 
 
 
+
+.listitems{
+   text-align: right !important;
+   list-style-type: disc !important;
+}
 
