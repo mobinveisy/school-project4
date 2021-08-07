@@ -168,3 +168,33 @@ $('.button').click(function(){
                             .siblings().removeClass('is-active');
    $(this).hide();
   });
+
+
+
+
+//   modal dialog =>
+
+$(".dialogCorso .close,#backCover").click(function () {
+    id = $(this).data("id");
+    $("#backCover").removeClass("open");
+    $(".dialogCorso").removeClass("open");
+  });
+
+  $(".corso-testo a").click(function () {
+
+    id = $(this).data("dialog");
+    $("#backCover").addClass("open");
+    $("#" + id).addClass("open");
+
+  });
+
+  $(".corso-testo a,.box-right a").click(function () {
+
+    if ($(this).data("esterno") == "si") return;
+
+    id = $(this).data("dialog");
+    $("#backCover").addClass("open");
+    $("#" + id).addClass("open");
+
+  });
+
