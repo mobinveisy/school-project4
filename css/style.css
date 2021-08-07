@@ -387,22 +387,6 @@ nav {
   opacity: 1;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .navgition .navbar .navbar-social {
-
-    position: absolute;
-    right: 70px;
-    top: 7px;
-  }
-}
-
-@media (max-width: 767px) {
-  .navgition .navbar .navbar-social {
-    position: absolute;
-    right: 60px;
-    top: 7px;
-  }
-}
 
 .navgition .navbar .navbar-social span {
   font-size: 16px;
@@ -485,14 +469,7 @@ nav {
 }
 
 .social-btns {
-
-  height: 50px;
-  margin: 10px 10px;
-  font-size: 0;
   text-align: center;
-  position: absolute;
-  right: 900px;
-
 }
 
 .social-btns .btn {
