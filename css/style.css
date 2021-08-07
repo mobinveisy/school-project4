@@ -3,6 +3,11 @@
 ==========================*/
 @import url(font.css);
 
+html{
+  scroll-behavior: smooth;
+
+}
+
 ::-webkit-scrollbar {
   width: 20px;
 }
@@ -641,10 +646,9 @@ nav {
   height: 100%;
   top: 0;
   left: 0;
-  background-image: -webkit-linear-gradient(left, #0067f4, #2bdbdc);
-  background-image: -o-linear-gradient(left, #0067f4, #2bdbdc);
-  background-image: linear-gradient(to right, #0067f4, #2bdbdc);
-  background-position: right center;
+  background: linear-gradient(90deg, hsla(354, 88%, 71%, 1) 0%, hsla(331, 74%, 68%, 1) 100%);
+  background: -moz-linear-gradient(90deg, hsla(354, 88%, 71%, 1) 0%, hsla(331, 74%, 68%, 1) 100%);
+  background: -webkit-linear-gradient(90deg, hsla(354, 88%, 71%, 1) 0%, hsla(331, 74%, 68%, 1) 100%);  background-position: right center;
   z-index: -1;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
@@ -674,10 +678,10 @@ nav {
 
 
 .header-hero .header-content .header-btn li a.main-btn.btn-one:hover::before {
-  background-image: -webkit-linear-gradient(right, #0067f4, #2bdbdc);
-  background-image: -o-linear-gradient(right, #0067f4, #2bdbdc);
-  background-image: linear-gradient(to left, #0067f4, #2bdbdc);
-  background-position: left center;
+
+  background: linear-gradient(360deg, hsla(354, 88%, 71%, 0.7) 20%, hsla(331, 74%, 68%, 1) 100%);
+  background: -moz-linear-gradient(360deg, hsla(354, 88%, 71%, 0.7) 20%, hsla(331, 74%, 68%, 1) 100%);
+  background: -webkit-linear-gradient(360deg, hsla(354, 88%, 71%, 0.7) 20%, hsla(331, 74%, 68%, 1) 100%);  background-position: left center;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
@@ -1448,18 +1452,17 @@ box-shadow:  27px 27px 55px #20283b,
   text-align: center;
   background-color: #f67280;
   bottom: 10px;
-  right: 20px;
+  left: 20px;
   z-index: 999;
   color: #fff;
-  font-size: 20px;
+  font-size: 22px;
   -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
   -moz-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-  display: none;
 }
 
 .back-to-top:hover {
-  background-color: #005ad5;
+  background-color: #fe4365;
   color: #fff;
 }
 
