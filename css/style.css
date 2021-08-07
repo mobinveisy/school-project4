@@ -1204,7 +1204,15 @@ margin-top: 120px;
 .contact-area {
   padding-top: 120px;
   padding-bottom: 120px;
+  margin-bottom: 100px;
+  border-radius: 103px;
+background: linear-gradient(225deg, #ff8c9d, #e67684);
+box-shadow:  -32px 32px 56px #d46d7a,
+             32px -32px 56px #ff99ac;
+
 }
+
+
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .contact-area {
@@ -2438,11 +2446,11 @@ label:first-child {
   top: 35%; /* Adjust this value to move the positioned div up and down */
   text-align: center;
   width: 65%; /* Set the width of the positioned div */
-  -webkit-animation:colorchange 10s infinite alternate;
+  animation:colorchange 10s infinite alternate;
 }
 
 
-@-webkit-keyframes colorchange {
+@keyframes colorchange {
   0% {
     
     color: #CDB4DB;
@@ -2854,3 +2862,34 @@ label:first-child {
   color: yellow;
 }
 
+/* map */
+.mapContainer iframe{
+
+  border-radius: 64px;
+}
+.mapContainer{
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 64px;
+  background: #d5acb3;
+  box-shadow: inset -26px 26px 53px #bb979e,
+              inset 26px -26px 53px #efc1c8;
+}
+.address-div{
+ padding-top: 10px;
+ padding-left: 25px;
+ padding-right: 25px;
+ padding-bottom: 40px;
+  text-align: right;
+  border-radius: 50px;
+background: linear-gradient(145deg, #c09ba1, #e4b8c0);
+box-shadow:  12px 12px 24px #bb979e,
+             -12px -12px 24px #efc1c8;
+             line-height: 40px;
+}
+
+.card__title {
+  color: #000 !important;
+  font-weight: 600;
+  margin-bottom: .25rem;
+}
