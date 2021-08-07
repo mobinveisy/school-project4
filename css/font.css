@@ -38,5 +38,5 @@
     font-style: normal
 }
 *{
-    font-family: IRANSansWeb;
+    font-family: IRANSansWeb !important;
 }
