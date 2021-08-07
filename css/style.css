@@ -168,6 +168,7 @@ p {
   font-weight: 600;
   line-height: 55px;
   color: #121212;
+  text-align: center;
 }
 
 @media (max-width: 767px) {
@@ -1117,14 +1118,16 @@ box-shadow: inset 31px 31px 62px #002a64,
 
 }
 
-register-img3 {
-  position: fixed;
+.img-chair img{
+
+margin-left: 1000px;
+margin-top: 120px;
+
 
 }
-
-register-img {
-  position: fixed;
-  margin: auto;
+.img-book img{
+  margin-left: 60px;
+  margin-top: -260px;
 }
 
 @media (max-width: 767px) {
@@ -1846,7 +1849,7 @@ mark {
 
 
 .title {
-  text-align: right;
+  text-align: center;
   margin-bottom: 30px;
   color: #FF8F00;
   font-weight: 300;
@@ -2158,11 +2161,11 @@ label:first-child {
 }
 
 .card-news .image-news-2 {
-  background: url(../images/img/dialog-content-image-1.jpg) center / cover no-repeat;
+  background: url(../images/img/dialog-content-image-2.webp) center / cover no-repeat;
 }
 
 .card-news .image-news-3 {
-  background: url(../images/img/dialog-content-image-1.jpg) center / cover no-repeat;
+  background: url(../images/img/dialog-content-image-3.webp) center / cover no-repeat;
 }
 
 .card-news .header::before,
@@ -2356,7 +2359,7 @@ label:first-child {
 
 .dialogCorso .dialog-text {
   width: 100%;
-  font-size: 14px;
+  font-size: 20px;
   text-align: right;
   display: inline-block;
   text-transform: uppercase;
@@ -2369,8 +2372,8 @@ label:first-child {
   right: 30px;
   top: 30px;
   cursor: pointer;
-  color: #eb008c;
-  font-size: 20px;
+  color: #fc0000;
+  font-size: 40px;
 }
 
 .dialogCorso .row {
@@ -2400,5 +2403,22 @@ label:first-child {
 
 .dialog-contentcontent ul {
   list-style: none;
+}
+
+.news-title{
+  font-family: "IRANSansWeb";
+  font-size: 44px;
+}
+.news-section{
+  margin-top: 100px;
+  padding: 100px;
+  border-radius: 55px;
+  background: linear-gradient(145deg, #cacaca, #f0f0f0);
+  box-shadow:  33px 33px 66px #aaaaaa,
+               -33px -33px 66px #ffffff;
+}
+.news-section .img-news0{
+   position: relative;
+   margin-left: 420px !important;
 }
  /* end of modal styels */
