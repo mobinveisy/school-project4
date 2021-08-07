@@ -1727,9 +1727,9 @@ box-shadow:  27px 27px 55px #20283b,
 }
 
 mark {
-  color: #F7941D;
-  background-color: #6c6c6c;
-  border-radius: 20px;
+  color: #F7941D !important;
+  background-color: #6c6c6c !important;
+  border-radius: 20px !important;
 }
 
 .school-honors h3,
