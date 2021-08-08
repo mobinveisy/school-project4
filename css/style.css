@@ -2714,8 +2714,12 @@ label:first-child {
 }
 
 /* ------ Testimonials Section------ */
-.testimonials {
-  background-color: #FFAFCC;
+.owl-stage-outer {
+  border-radius: 127px;
+background: linear-gradient(225deg, #d8d8d8, #ffffff);
+box-shadow:  -28px 28px 56px #d1d1d1,
+             28px -28px 56px #ffffff;
+             padding-top: 40px;
 }
 
 .testimonial-item {
