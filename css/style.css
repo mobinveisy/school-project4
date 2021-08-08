@@ -1202,13 +1202,14 @@ margin-top: 120px;
     6.CALL TO ACTION css 
 ===========================*/
 .contact-area {
+
   padding-top: 100px;
   padding-bottom: 100px;
   margin-bottom: 100px;
-  border-radius: 103px;
-background: linear-gradient(225deg, #ff8c9d, #e67684);
-box-shadow:  -32px 32px 56px #d46d7a,
-             32px -32px 56px #ff99ac;
+  border-radius: 127px;
+  background: linear-gradient(225deg, #e68e9c, #ffa9b9);
+  box-shadow:  -28px 28px 56px #de8997,
+               28px -28px 56px #ffb3c3;
 
 }
 
@@ -1338,10 +1339,10 @@ box-shadow:  -32px 32px 56px #d46d7a,
 
 .footer-copyright {
   text-align: center !important;
-  border-radius: 44px ;
-background: #2b354f;
-box-shadow:  27px 27px 55px #20283b,
-             -27px -27px 55px #364263;
+  border-radius: 127px;
+  background: linear-gradient(225deg, #273047, #2e3955);
+  box-shadow:  -7px 7px 14px #222a3e,
+               7px -7px 14px #344060;
              margin-bottom: 10px;
              
 }
@@ -2833,8 +2834,10 @@ box-shadow:  12px 12px 24px #bb979e,
 } 
 
 .inner-container{
-  background-color: #e2c6cb;
-  border-radius: 30px;
+  border-radius: 127px;
+  background: linear-gradient(225deg, #cbb2b7, #f2d4d9);
+  box-shadow:  -28px 28px 56px #c5acb1,
+               28px -28px 56px #ffe0e5;
 }
 
 .inner-container h1{
