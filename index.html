@@ -42,16 +42,22 @@
     
    <!-- owl carousel  -->
    <link rel="stylesheet" href="css/owl.carousel.min.css">
+   <link rel="stylesheet" href="css/owl.theme.green.min.css">
+
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+   <!-- lightbox2 -->
+   <script src="js/owl.carousel.min.js"></script>
+
 </head>
 
 <body>
     
-     <div class="preloader">
+     <!-- <div class="preloader">
         <div id="loader"></div>
         <div class="preloader_inner">1%</div>
         <img class="preloader-h1-sajjeo" src="images/img/black-logo.png" alt="img">
         <p class="preloader-h2-sajjeo">  www.maktabsoft.ir </p>
-    </div>
+    </div> -->
 
 
     <!--====== HEADER PART START ======-->
@@ -826,111 +832,137 @@
         </div>
         <div class="blog-slider__pagination"></div>
       </div>
-      <br><br><br><br><br><br><br><br>
 
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 
-
-
-
-  <!-- Testimonials Section Start  -->
-  <section class="testimonials section-padding" id="testimonials">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-8">
-          <div class="section-title">
-            <h2> بخش نظرات </h2>
-          </div>
+    <div class="owl-carousel custom1 owl-theme owl-loaded container">
+        <div class="owl-stage-outer">
+            <h2 class="text-center">برخی از نظرات</h2>
+            <div class="owl-stage">
+                <div class="owl-item">
+                    <div class="testimonial-item">
+                        <div class="img-box">
+                          <img src="images/img/user1.jpg" alt="testimonials">
+                          <i class="bi bi-chat-right-quote-fill"></i>
+                        </div>
+                        <p> همیشه دوست داشتم که در یه مدرسه خیلی خوب با معلم های فوق العاده ثبت نام کنم تا برای آینده تحصیلیم آماده باشم و موفق شوم در مدرسه مکتبخانه دیگه خیالم راحته. </p>
+                        <h3>  مهسا تهرانی </h3>
+                        <span>  دانش آموز نمونه پایه ششم </span>
+                        <div class="rating">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fillr"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                        </div>
+                      </div>            
+                </div>
+                
+                <div class="owl-item">
+                    <div class="testimonial-item">
+                        <div class="img-box">
+                          <img src="images/img/user2.jpg" alt="testimonials">
+                          <i class="bi bi-chat-right-quote-fill"></i>
+                        </div>
+                        <p> من با معلم و مدیریت بسیار خوب مدرسه مکتبخانه تونستم بسیار موفق و در مدرسه از تحصیل لذت ببرم </p>
+                        <br>
+                        <h3>سویل خوشبین </h3>
+                        <span> دانش آموزش ممتاز پایه چهارم  </span>
+                        <div class="rating">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fillr"></i>
+                          <i class="bi bi-star-fill"></i>
+                        </div>
+                      </div>
+                </div>
+                <div class="owl-item">
+                    <div class="testimonial-item">
+                        <div class="img-box">
+                          <img src="images/img/user3.jpg" alt="testimonials">
+                          <i class="bi bi-chat-right-quote-fill"></i>
+                        </div>
+                        <p>بسیار خوشحالم که تونستم در مدرسه مکتبخانه ثبت نام کنم چون فکر نمیکنم بهتر از این مدرسه وجود داشته باشه</p>
+                        <br>
+                        <h3> پارمیدا توحیدی</h3>
+                        <span> دانش آموز برتر پایه سوم</span>
+                        <div class="rating">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                        </div>
+                      </div>
+                </div>
+                <div class="owl-item">
+                    <div class="testimonial-item">
+                        <div class="img-box">
+                          <img src="images/img/user4.jpg" alt="testimonials">
+                          <i class="bi bi-chat-right-quote-fill"></i>
+                        </div>
+                        <p>من تازه اومدم مدرسه و همیشه از مدرسه می ترسیدم اما وقتی وارد مدرسه مکتبخانه شدم دوست داشتم همیشه بمونم تو مدرسه و درس بخونم </p>
+                        <h3>سپیده شایسته  </h3>
+                        <span>دانش آموز پایه اول </span>
+                        <div class="rating">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="owl-carousel testimonials-carousel">
-          <div class="testimonial-item">
-            <div class="img-box">
-              <img src="images/img/user1.jpg" alt="testimonials">
-              <i class="bi bi-chat-right-quote-fill"></i>
+        <!-- </div>
+    </div> -->
+
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+            rtl:true,
+            loop:true,
+            margin:40,
+            nav:true,
+            items:1,
+            autoplay:true,
+            autoplayTimeout:2000,
+            autoplayHoverPause:true,
+            smartSpeed:400,
+            stagePadding:30,
+        })
+    </script>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+    <!-- partial:index.partial.html -->
+    <div class="about-section row justify-content-center inner-container">
+        <div class="col-md-5">
+            <div class="container">
+                <h1>درباره مدرسه </h1>
+                <p class="text">
+                    ما معتقدیم مدرسه خوب ، مدرسه ای پویاست ، مدرسه ای که دائم در تلاش برای بروز شدن است . روش سرگرم آموزی (یادگیری با طعم لذت ) را از موثرترین روش ها در علاقمند سازی و تعمیق یادگیری میدانیم . در مدرسه ما علاوه بر بیست و پنج زنگ آموزشی ده زنگ اضافه برای آموزش های ضروری دیگر اختصاص یافته
+                </p>
             </div>
-            <p> همیشه دوست داشتم که در یه مدرسه خیلی خوب با معلم های فوق العاده ثبت نام کنم تا برای آینده تحصیلیم آماده باشم و موفق شوم در مدرسه مکتبخانه دیگه خیالم راحته. </p>
-            <h3>  مهسا تهرانی </h3>
-            <span>  دانش آموز نمونه پایه ششم </span>
-            <div class="rating">
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fillr"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-            </div>
-          </div>
-          <div class="testimonial-item">
-            <div class="img-box">
-              <img src="images/img/user2.jpg" alt="testimonials">
-              <i class="bi bi-chat-right-quote-fill"></i>
-            </div>
-            <p> من با معلم و مدیریت بسیار خوب مدرسه مکتبخانه تونستم بسیار موفق و در مدرسه از تحصیل لذت ببرم </p>
-            <h3>سویل خوشبین </h3>
-            <span> دانش آموزش ممتاز پایه چهارم  </span>
-            <div class="rating">
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fillr"></i>
-              <i class="bi bi-star-fill"></i>
-            </div>
-          </div>
-          <div class="testimonial-item">
-            <div class="img-box">
-              <img src="images/img/user3.jpg" alt="testimonials">
-              <i class="bi bi-chat-right-quote-fill"></i>
-            </div>
-            <p>بسیار خوشحالم که تونستم در مدرسه مکتبخانه ثبت نام کنم چون فکر نمیکنم بهتر از این مدرسه وجود داشته باشه</p>
-            <h3> پارمیدا توحیدی</h3>
-            <span> دانش آموز برتر پایه سوم</span>
-            <div class="rating">
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-            </div>
-          </div>
-          <div class="testimonial-item">
-            <div class="img-box">
-              <img src="images/img/user4.jpg" alt="testimonials">
-              <i class="bi bi-chat-right-quote-fill"></i>
-            </div>
-            <p>من تازه اومدم مدرسه و همیشه از مدرسه می ترسیدم اما وقتی وارد مدرسه مکتبخانه شدم دوست داشتم همیشه بمونم تو مدرسه و درس بخونم </p>
-            <h3>سپیده شایسته  </h3>
-            <span>دانش آموز پایه اول </span>
-            <div class="rating">
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-            </div>
-          </div>
         </div>
-      </div>
+        <div class="col-md-6">
+            <img src="images/img/about-us.png" alt="img">
+        </div>
     </div>
-  </section>
-  <!-- Testimonials Section End  -->
-
-
-  <br><br><br><br><br><br>  
-
-
-
-
-<!-- partial:index.partial.html -->
-<div class="about-section">
-    <div class="inner-container">
-      <h1>درباره مدرسه </h1>
-      <p class="text">
-  ما معتقدیم مدرسه خوب ، مدرسه ای پویاست ، مدرسه ای که دائم در تلاش برای بروز شدن است . روش سرگرم آموزی (یادگیری با طعم لذت ) را از موثرترین روش ها در علاقمند سازی و تعمیق یادگیری میدانیم . در مدرسه ما علاوه بر بیست و پنج زنگ آموزشی ده زنگ اضافه برای آموزش های ضروری دیگر اختصاص یافته    </p>
-      </div>
-    </div>
-  </div>
-  
     
-
-
-
-    <br><br><br><br><br><br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 
     <section id="contact" class="contact-area">
      
@@ -1096,12 +1128,10 @@
 
         // });
     </script>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-<script src="js/owl.carousel.min.js"></script>
-<!-- lightbox2 -->
-<script src="js/lightbox-plus-jquery.min.js"></script>
-<!-- swiper -->
-<script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js'></script>
+
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+        <!-- swiper -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js'></script>
 
     <!-- WOW js -->
     <script src="js/wow.min.js"></script>
@@ -1120,7 +1150,7 @@
 
     <!--====== Main js ======-->
     <script src="js/main.js"></script>
-
+    
 </body>
 
 </html>
