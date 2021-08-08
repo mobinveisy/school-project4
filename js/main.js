@@ -89,7 +89,7 @@ $('.carousel').carousel({
   })
   
   var i = 0;
-  var txt = 'وب سایت مدرسه نوآوران';
+  var txt = 'وب سایت مکتبخانه ';
   var speed = 250;
   
   function typeWriter() {
@@ -107,7 +107,7 @@ $('.carousel').carousel({
   
   $(window).on('scroll', function (event) {
     var scroll = $(window).scrollTop();
-    var text0 = "<p> وب سایت مکتبخانه </p>"
+    var text0 = "<p> وب سایت مکتبخانه </p>";
     if (scroll < 10) {
         $("#typing").remove("p");
     } else {

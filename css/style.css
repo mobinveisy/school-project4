@@ -1337,6 +1337,7 @@ box-shadow:  -32px 32px 56px #d46d7a,
 
 
 .footer-copyright {
+  text-align: center !important;
   border-radius: 44px ;
 background: #2b354f;
 box-shadow:  27px 27px 55px #20283b,
@@ -2154,6 +2155,7 @@ label:first-child {
 }
 
 .dialogCorso {
+
   opacity: 0;
   visibility: hidden;
   transition: .3s ease all;
@@ -2639,7 +2641,7 @@ label:first-child {
   text-decoration: none;
   font-weight: 500;
   justify-content: right;
-  text-align: center;
+  text-align: center !important;
   letter-spacing: 1px;
 }
 .blog-slider__button:hover{
@@ -2818,4 +2820,62 @@ box-shadow:  12px 12px 24px #bb979e,
   color: #000 !important;
   font-weight: 600;
   margin-bottom: .25rem;
+}
+
+
+.about-section{
+  background: url(../images/img/about-us.png) no-repeat left;
+  background-size: 55%;
+  background-color: #fdfdfd;
+  overflow: hidden;
+  padding: 100px 0;
+}
+
+.inner-container{
+  width: 55%;
+  float: right;
+  background-color: #e2c6cb;
+  padding: 150px;
+  border-radius: 30px;
+}
+
+.inner-container h1{
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: 900;
+  text-align: right;
+}
+
+.text{
+  font-size: 13px;
+  color: #545454;
+  line-height: 30px;
+  text-align: justify;
+  margin-bottom: 40px;
+}
+
+
+@media screen and (max-width:1200px){
+  .inner-container{
+      padding: 80px;
+  }
+}
+
+@media screen and (max-width:1000px){
+  .about-section{
+      background-size: 100%;
+      padding: 100px 40px;
+  }
+  .inner-container{
+      width: 100%;
+  }
+}
+
+@media screen and (max-width:600px){
+  .about-section{
+      padding: 0;
+  }
+  .inner-container{
+      padding: 60px;
+  }
 }
