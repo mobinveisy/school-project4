@@ -2846,7 +2846,7 @@ box-shadow:  12px 12px 24px #bb979e,
   text-align: right;
 }
 
-.text{
+.inner-container .text{
   font-size: 13px;
   color: #545454;
   line-height: 30px;
