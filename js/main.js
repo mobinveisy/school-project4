@@ -107,11 +107,11 @@ $('.carousel').carousel({
   
   $(window).on('scroll', function (event) {
     var scroll = $(window).scrollTop();
-    var text1 = "<p> وب سایت مکتبخانه </p>"
+    var text0 = "<p> وب سایت مکتبخانه </p>"
     if (scroll < 10) {
         $("#typing").remove("p");
     } else {
-        $("#typing").add(text1);
+        $("#typing").add(text0);
     }
 });
 
