@@ -107,7 +107,7 @@ $('.carousel').carousel({
   
   $(window).on('scroll', function (event) {
     var scroll = $(window).scrollTop();
-    var text1 = "<p>وب سایت مدرسه نوآوران</p>"
+    var text1 = "<p> وب سایت مکتبخانه </p>"
     if (scroll < 10) {
         $("#typing").remove("p");
     } else {
