@@ -2823,19 +2823,12 @@ box-shadow:  12px 12px 24px #bb979e,
 }
 
 
-.about-section{
-  background: url(../images/img/about-us.png) no-repeat left;
-  background-size: 55%;
-  background-color: #fdfdfd;
-  overflow: hidden;
-  padding: 100px 0;
-}
+.about-section img{
+  padding: 2rem;
+} 
 
 .inner-container{
-  width: 55%;
-  float: right;
   background-color: #e2c6cb;
-  padding: 150px;
   border-radius: 30px;
 }
 
@@ -2861,15 +2854,12 @@ box-shadow:  12px 12px 24px #bb979e,
   }
 }
 
-@media screen and (max-width:1000px){
+/* @media screen and (max-width:1000px){
   .about-section{
       background-size: 100%;
       padding: 100px 40px;
   }
-  .inner-container{
-      width: 100%;
-  }
-}
+} */
 
 @media screen and (max-width:600px){
   .about-section{
