@@ -852,7 +852,7 @@ nav {
 
 
 .single-pricing .pricing-header .sub-title {
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 700;
   color: #121212;
   position: relative;
@@ -876,7 +876,7 @@ nav {
 
 .single-pricing .pricing-header .price {
   display: block;
-  font-size: 24px;
+  font-size: 14px;
   font-weight: 600;
   margin-bottom: 20px;
   color: #121212;
@@ -1589,11 +1589,12 @@ margin-top: 120px;
 
 
 
-.main-img {
+.main-img0 {
   display: inline;
   margin-right: 450px;
   margin-top: -450px;
-  animation: Bounce_1 3s ease infinite;
+  animation: Bounce_1 4s ease infinite;
+
 }
 
 .main-img1 {
@@ -2274,7 +2275,7 @@ label:first-child {
   font-size: 44px;
 }
 .news-section{
-  margin-top: 100px;
+  margin-top: 30px;
   padding: 100px;
   border-radius: 55px;
   background: linear-gradient(145deg, #cacaca, #f0f0f0);
@@ -2283,7 +2284,8 @@ label:first-child {
 }
 .news-section .img-news0{
    position: relative;
-   margin-left: 420px !important;
+   margin-left: 400px !important;
+
 }
  /* end of modal styels */
 
@@ -2819,11 +2821,13 @@ background: linear-gradient(145deg, #c09ba1, #e4b8c0);
 box-shadow:  12px 12px 24px #bb979e,
              -12px -12px 24px #efc1c8;
              line-height: 40px;
+        
 }
 
 .card__title {
   color: #000 !important;
   font-weight: 600;
+  font-size: 20px;
   margin-bottom: .25rem;
 }
 .about-section .container{
@@ -2831,6 +2835,7 @@ box-shadow:  12px 12px 24px #bb979e,
 }
 .about-section img{
   padding: 2rem;
+  border-radius: 50px;
 } 
 
 .inner-container{
